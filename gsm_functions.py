@@ -5,10 +5,10 @@ class GsmSim800lMsg:
     def __init__(self):
         TX_PIN = 17
         RX_PIN = 16
-        self.GSM_Instance = UART(1, tx=TX_PIN, rx=RX_PIN, baudrate=0) # baudrate definido como auto
+        self.GSM_Instance = UART(1, tx=TX_PIN, rx=RX_PIN, baudrate=0) # baudrate definido como 9600
         self.send_count = 1
         self.flag = ""
-        self.numeros = ["+5519992815223"]
+        self.numeros = ["+5519981728120", "+5519992815223"]
         self.resposta = ""
 
     def send_cmd(self, cmd, back=None, timeout=2000):
@@ -59,7 +59,6 @@ class GsmSim800lMsg:
         return self.resposta
     
     def get_time(self):
-        # Busca o horario definido pela rede(esta falhando ainda em analise)
         success, response = self.send_cmd('AT+CCLK?\r\n', 'OK')
         time.sleep(1)
         if success:

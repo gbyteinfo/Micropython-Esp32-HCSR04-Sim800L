@@ -94,3 +94,4 @@ class SemafaroIoT:
     def enviar_sms(self):
         resposta = self.gsm.send()
         return resposta
+

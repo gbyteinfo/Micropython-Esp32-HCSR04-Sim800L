@@ -10,8 +10,9 @@ def main():
     # Hack para ativar Esp32wrover Cam que nao boot ao ligalar ela
     # Solução foi usar a esp32 principal para dar o boot nela pelo GPIO 14
     # Colocando seu estado inicial em low(0) e em seguida ativando e desativando de novo
-    # Com isso ela inicia com o servidor de stream da cam para tirar as fotos e ou disponibilizar
-    # o stream de video local
+    # Lembrando que o GPIO14 da esp32 devkit deve estar no GPIO EN da esp32wrover
+    # Com isso ela inicia com o servidor de stream da cam com o bootiniciado,com isso vai tirar as fotos e ou 
+    # disponibilizar o stream de video local
     
     # Configura o pino GPIO 14 como saída
     #reset_pin = Pin(14, Pin.OUT)

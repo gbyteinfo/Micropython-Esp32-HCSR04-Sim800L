@@ -20,6 +20,9 @@
 6. **Registro no Firebase**: Dados de presença registrados no Firebase usando `ufirebase`.
 7. **Retorno ao Loop**: Após a notificação e registro dos dados, o sistema retorna ao início do loop para novo monitoramento.
 
+## Videos do Projeto
+   [![IMAGE ALT TEXT](http://img.youtube.com/vi/lzM8vkIC1gg/0.jpg)](http://www.youtube.com/watch?v=lzM8vkIC1gg "Presence Pulse")
+
 ## Imagens do Protótipo
 - Presence Pulse Protótipo Final v1.0.1 
 ## <img src="imgs_git/presence_pulse.jpg" width="128" />  [View](https://github.com/gbyteinfo/Micropython-Esp32-HCSR04-Sim800L/blob/develop/imgs_git/presence_pulse.jpg)

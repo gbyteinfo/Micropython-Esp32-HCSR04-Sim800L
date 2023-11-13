@@ -21,7 +21,8 @@
 7. **Retorno ao Loop**: Após a notificação e registro dos dados, o sistema retorna ao início do loop para novo monitoramento.
 
 ## Imagens do Protótipo
-![Presence Pulse Protótipo Final v1.0.1 ] (/imgs_git/presence_pulse.jpg)
+- ESP32 WRoom Devkit v1
+	![Presence Pulse Protótipo Final v1.0.1 ] (/imgs_git/presence_pulse.jpg)
 
 ## Componentes
 - ESP32 WRoom Devkit v1

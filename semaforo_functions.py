@@ -6,6 +6,7 @@ import network
 import ubinascii
 import ujson
 import ufirebase as firebase
+import os
 
 class SemafaroIoT:
     def __init__(self):
@@ -119,17 +120,19 @@ class SemafaroIoT:
         led_on = True
         self.OLED.fill(0)
         self.desenha_borda()
-        self.OLED.text(self.enviar_sms(), 6, 15)#.......... 1° Envia o SMS por GSM
+        self.OLED.text(self.enviar_sms(distancia), 6, 15)#.......... 1° Envia o SMS por GSM
         self.OLED.show()
         time.sleep(4)
         self.salvar_firebase(distancia)#................... 2° Salva os dados no firebase e é carregado no APP REACT para vizualização na web(futuramente miostrando foto tirada no local tambem)
         self.LED_VERMELHO(0)
         led_on = False
             
-    def enviar_sms(self):
-        resposta = self.gsm.send()
+    def enviar_sms(self, distancia):
+        resposta = self.gsm.enviar_sms(distancia)
         return resposta
-    
+    # Variável global para armazenar os dados obtidos do Firebase
+        dados_firebase = {}                
+        
     def salvar_firebase(self, distancia):
         self.verifica_wiffi()#................................ Connecta Wiffi
         self.OLED.fill(0)
@@ -150,5 +153,15 @@ class SemafaroIoT:
             "distancia": "{:.2f}".format(distancia),
             "imagem": "Imagem da Camera"
         })
-        firebase.put("Teste/Dados", data_json)
-        time.sleep(5)            
+        
+         # Tentar obter dados do Firebase
+        try:
+            def busca_dados(name, id, varname):
+                print("value: "+str(eval("firebase."+varname))+"\n")
+            firebase.get("Teste", "VAR1", bg=True, id=0, cb=(busca_dados, ("Teste", "0", "VAR1")))
+            time.sleep(4)
+            # Salvar dados no Firebase
+            firebase.put("Teste/Dados", data_json)
+            time.sleep(4)
+        except Exception as e:
+            print("Erro ao acessar o Firebase:", e)    

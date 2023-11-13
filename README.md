@@ -1,7 +1,7 @@
 # Presence Pulse
 
 ## Descrição
-"Presence Pulse" é um inovador sistema AIoT destinado a melhorar o atendimento em estabelecimentos com pontos de serviço fixos, como hotéis. Ele integra sensores de proximidade, um módulo GSM e um microcontrolador ESP32 para notificar os recepcionistas sobre a presença de visitantes na área de recepção, otimizando assim o atendimento ao cliente.
+"Presence Pulse" é um inovador sistema IoT destinado a melhorar o atendimento em estabelecimentos com pontos de serviço fixos, como hotéis. Ele integra sensores de proximidade, um módulo GSM e um microcontrolador ESP32 para notificar os recepcionistas sobre a presença de visitantes na área de recepção, otimizando assim o atendimento ao cliente.
 
 ## Funcionalidades
 - **Detecção de Presença**: Utiliza sensores de proximidade para identificar a presença de visitantes na recepção.
@@ -19,6 +19,9 @@
 5. **Ativação da Notificação**: Com a presença detectada, `GSMSim800lMsg` envia notificações ao recepcionista.
 6. **Registro no Firebase**: Dados de presença registrados no Firebase usando `ufirebase`.
 7. **Retorno ao Loop**: Após a notificação e registro dos dados, o sistema retorna ao início do loop para novo monitoramento.
+
+## Imagens do Protótipo
+![Presence Pulse Protótipo Final v1.0.1 ] (/imgs_git/presence_pulse.jpg)
 
 ## Componentes
 - ESP32 WRoom Devkit v1

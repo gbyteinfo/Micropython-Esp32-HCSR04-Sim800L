@@ -21,8 +21,32 @@
 7. **Retorno ao Loop**: Após a notificação e registro dos dados, o sistema retorna ao início do loop para novo monitoramento.
 
 ## Imagens do Protótipo
-- ESP32 WRoom Devkit v1
-	![Presence Pulse Protótipo Final v1.0.1 ] (/imgs_git/presence_pulse.jpg)
+- Presence Pulse Protótipo Final v1.0.1 
+## <img src="imgs_git/presence_pulse.jpg" width="128" />  [View](https://github.com/gbyteinfo/Micropython-Esp32-HCSR04-Sim800L/blob/develop/imgs_git/presence_pulse.jpg)
+
+- Presence Pulse mostrando o OLED Display envio ao Firebase
+## <img src="imgs_git/firebase_envio.jpg" width="128" />  [View](https://github.com/gbyteinfo/Micropython-Esp32-HCSR04-Sim800L/blob/develop/imgs_git/firebase_envio.jpg)
+
+- Presence Pulse Conector para alimentação de 12V - 1.5ma
+## <img src="imgs_git/carregador_p4.jpg" width="128" />  [View](https://github.com/gbyteinfo/Micropython-Esp32-HCSR04-Sim800L/blob/develop/imgs_git/carregador_p4)
+
+- Presence Pulse mensagens SMS recebidas enviadas por GSM com SIM800L + Chip da TIM
+## <img src="imgs_git/SMS-Recebido.jpg" width="128" />  [View](https://github.com/gbyteinfo/Micropython-Esp32-HCSR04-Sim800L/blob/develop/imgs_git/SMS-Recebido.jpg)
+
+- Presence Pulse Realtime database no-sql Firebase, Estrutura json enviado pela ESP32 para armazenar as informações
+## <img src="imgs_git/firebase_structure.jpg" width="128" />  [View](https://github.com/gbyteinfo/Micropython-Esp32-HCSR04-Sim800L/blob/develop/imgs_git/firebase_structure.jpg)
+
+- Presence Pulse Protótipo aberto visto sem estar ligado
+## <img src="imgs_git/presence_pulse_aberto1.jpg" width="128" />  [View](https://github.com/gbyteinfo/Micropython-Esp32-HCSR04-Sim800L/blob/develop/imgs_git/presence_pulse_aberto1.jpg)
+
+- Presence Pulse Protótipo aberto visto ligado e funcionando todos os modulos
+## <img src="imgs_git/presence_pulse_aberto2.jpg" width="128" />  [View](https://github.com/gbyteinfo/Micropython-Esp32-HCSR04-Sim800L/blob/develop/imgs_git/presence_pulse_aberto2.jpg)
+
+- Presence Pulse Protótipo aberto visto ligado e funcionando todos os modulos na parte mais interna
+## <img src="imgs_git/presence_pulse_aberto3.jpg" width="128" />  [View](https://github.com/gbyteinfo/Micropython-Esp32-HCSR04-Sim800L/blob/develop/imgs_git/presence_pulse_aberto3.jpg)
+
+- Presence Pulse Protótipo aberto visto ligado e funcionando todos os modulos na partemenos interna
+## <img src="imgs_git/presence_pulse_aberto4.jpg" width="128" />  [View](https://github.com/gbyteinfo/Micropython-Esp32-HCSR04-Sim800L/blob/develop/imgs_git/presence_pulse_aberto4.jpg)
 
 ## Componentes
 - ESP32 WRoom Devkit v1

@@ -1,6 +1,10 @@
 {
-    "wifi": {
-        "ssid": "VIVOFIBRA-9271",
-        "password": "CPnf2vzdJm"
-    }
+    "wifi1": {
+        "ssid": "--",
+        "password": "--"
+    },
+    "wifi2": {
+        "ssid": "--",
+        "password": "--"
+    },
 }

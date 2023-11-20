@@ -52,7 +52,7 @@ class GsmSim800lMsg:
             # Envia o SMS
             distancia_formatada = "{:.2f}".format(distancia)
             message = f"ATENCAO Presenca Detectada \nDist: {distancia_formatada} cm"
-            # Se retornar true armazena no succes, senao _ indica que nao retona nada tb
+            # Preparando, Se retornar true armazena no succes, senao _ indica que nao retona nada tb
             success, _ = self.send_cmd(f'AT+CMGS="{numero}"\r\n', '>') 
             if success:
                 self.send_cmd(message + chr(26), 'OK')
